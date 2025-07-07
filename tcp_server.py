@@ -3,11 +3,13 @@ import mysql.connector
 
 # Set up database connection
 db = mysql.connector.connect(
-    host="localhost",
+    host="mysql.railway.internal",
+    port=3306,
     user="root",
-    password="",
-    database="gps_tracker"
+    password="tdrryrozlbjenycipyluVbdloKixuiKb",
+    database="railway"
 )
+
 cursor = db.cursor()
 
 def save_tracker_data(data):
